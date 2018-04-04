@@ -1,0 +1,16 @@
+<h1 class='page-header'>Log Game</h1>
+
+	<%= form_for(@game) do |f| %>
+		<%= f.label :date_played %>
+		
+		<br>
+		<%= f.label :opponent %>
+		<br>
+		<%= f.label :user_score %>
+		<%= f.number_field :user_score %>
+		<br>
+		<%= f.label :opponent_score %>
+		<%= f.number_field :opponent_score %>
+		<br>
+		<%= f.submit "Save", class: "btn" %>
+	<% end %>
